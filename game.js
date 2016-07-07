@@ -3,36 +3,18 @@ var userName = prompt ("Hey who you!");
 alert ("Hey " + userName + "! How you livin !");
 
 function playGame(){
-  teaching();
-  school();
-  number();
+  askQuestion("How long have you been teaching?", 10);
+  askQuestion("What school did you attend?", "Nova" );
+  askQuestion("What is my favorite date?", "July 24");
   var finalCount = alert("Good job you guessed " + answerCount + " correct");
 }
 
-function teaching(){
-  var years = prompt ("How long have you been teaching?");
-  if (years > 10){
+function askQuestion(question, answer){
+  var response = prompt (question);
+  if (response == answer){
     alert("CORRECT!");
     answerCount++;
   }else{
     alert("Sorry Charlie!");
-  }
-}
-
-function school(){
-  var schoolName = prompt ("What school did you attend?");
-  if (schoolName == "Nova" || school == "SUNY"){
-    alert ("CORRECT");
-    answerCount++;
-  }else{
-    alert ("Sorry Charlie!");
-  }
-}
-
-function number(){
-  var number = prompt ("What is my favorite number?");
-  if(number == "July 24"){
-    alert ("CORRECT!");
-    answerCount++;
   }
 }
