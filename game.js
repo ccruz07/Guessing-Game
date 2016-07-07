@@ -2,10 +2,12 @@ var answerCount = 0;
 var userName = prompt ("Hey who you!");
 alert ("Hey " + userName + "! How you livin !");
 
-teaching();
-school();
-number();
-var finalCount = alert("Good job you guessed " + answerCount + " correct");
+function playGame(){
+  teaching();
+  school();
+  number();
+  var finalCount = alert("Good job you guessed " + answerCount + " correct");
+}
 
 function teaching(){
   var years = prompt ("How long have you been teaching?");
