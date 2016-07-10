@@ -1,22 +1,21 @@
 var answerCount = 0;
-//var userName = prompt ("Hey who you!");
-alert ("Hey " + userName + "! How you livin !");
 
 function playGame(){
-  askQuestion("Hey who you!", "userName");
+  var userName = prompt ("Hey who you!");
+  alert ("Hey " + userName + "! How you livin !");
   askQuestion("How long have I been teaching?", 10);
-  askQuestion("What school did I attend?", "Nova" );
-  askQuestion("What is my favorite date?", "July 24");
-  askQuestion("Name my hobbies", "Sewing,Jewelry,Shopping");
-  var finalCount = alert("Good job you guessed " + answerCount + " correct");
+  askQuestion("What school did I attend?", "NOVA" );
+  askQuestion("What is my favorite date?", "JULY 24");
+  askQuestion("Name my hobbies", "SEWING, JEWELRY, SHOPPING");
+  document.getElementById("results").innerHTML += "<br><br>" + " You guessed " + answerCount + " Correct!";
 }
 
 function askQuestion(question, answer){
   var response = prompt (question);
-  if (response == answer){
-    alert("CORRECT!");
+  if (response.toUpperCase() == answer){
+    document.getElementById("results").innerHTML += "<br><br>" + question + " You guessed " + answer + "<br>Congratulations you got it!";
     answerCount++;
   }else{
-    alert("Sorry Charlie!");
+    document.getElementById("results").innerHTML += "<br><br>" + question + " You guessed " + answer + "<br>Sorry Charlie you missed it!";
   }
 }

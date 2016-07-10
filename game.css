@@ -9,8 +9,16 @@ h1{
   }
 p{
   font-family:Arial;
-  font-size: 18;
+  font-size: 18px;
 }
 li{ font-family: Cursive;
-    font-size: 24;
+    font-size: 24px;
   }
+  h2 {
+  font-family: Arial;
+}
+#results{
+font-family:Arial;
+font-size: 20px;
+
+}
