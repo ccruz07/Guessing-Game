@@ -6,95 +6,73 @@
   <body>
     <h1>Hello World!</h1>
     <h3> Name </h3>
-        <p> CA Cruz</p>
+    <p> CA Cruz</p>
     <h3> Biography </h3>
-     Adult educator for more than 20 years in New York, Florida, Oregon and Washington
-      <h3> List of Experience </h3>
-            <ul>
-              <li> Teaching </li>
-              <p> Taught in New York, Florida, Washington & Oregon - 3 of the 4 corners of the country</p>
-              <li> Volunteering </li>
-                   <p> Volunteered for NPOs in Florida, built literacy programs. Started volunteering with Volunteers of American-Oregon 3 days after moving to the area. Helped a Men's Intensive Day Treatment Program build a back-to-school fundraiser.</p>
-                   <p> Currently volunteering with PCC- VESL program, working with refugees and immigrants to learn English for the workplace.</p>
-              <li> Program Development </li>
-                    <p> Designed Financial Literacy program for NPO in Florida.</p>
-              <li> Conference Presenter </li>
-                    <p> Presented conferences on Adult Education at the local, state, national level and in Canada.</p>
-            </ul>
-      <h3> List of Education</h3>
-            <ul>
-              <li> Nova Southeastern University</li>
-              <li> State University of New York </li>
-              </ul>
-      <h3> List of Goals </h3>
-        <ul>
-          <li> Complete Code 201 & get an internship </li>
-          <li> Start Code 301 in Fall and complete it EOY </li>
-          <li> Start a new job in the field either f/t or p/t in 2017 </li>
-          <li> Start incorporating coding into my consultant business </li>
-        </ul>
-        <input type="button"value = "PlayGame" onclick="PlayGame()">
-        <script type="text/javascript">
+    <p>Adult educator for more than 20 years in New York, Florida, Oregon and Washington</p>
+    <h3> List of Experience </h3>
+    <ul>
+      <li> Teaching </li>
+      <p> Taught in New York, Florida, Washington & Oregon - 3 of the 4 corners of the country</p>
+      <li> Volunteering </li>
+      <p> Volunteered for NPOs in Florida, built literacy programs. Started volunteering with Volunteers of American-Oregon 3 days after moving to the area. Helped a Men's Intensive Day Treatment Program build a back-to-school fundraiser.</p>
+      <p> Currently volunteering with PCC- VESL program, working with refugees and immigrants to learn English for the workplace.</p>
+      <li> Program Development </li>
+      <p> Designed Financial Literacy program for NPO in Florida.</p>
+      <li> Conference Presenter </li>
+      <p> Presented conferences on Adult Education at the local, state, national level and in Canada.</p>
+    </ul>
+    <h3> List of Education</h3>
+    <ul>
+      <li> Nova Southeastern University</li>
+      <li> State University of New York </li>
+    </ul>
+    <h3> List of Goals </h3>
+    <ul>
+     <li> Complete Code 201 & get an internship </li>
+     <li> Start Code 301 in Fall and complete it EOY </li>
+     <li> Start a new job in the field either f/t or p/t in 2017 </li>
+     <li> Start incorporating coding into my consultant business </li>
+    </ul>
+<input type="button"value = "PlayGame" onclick="PlayGame()">
+<script type="text/javascript">
 
 //IDK---var userName = function(getUserName){
-        var userName = prompt ("Hey who you!");
-        alert ("Hey " + userName + "! How you livin !");
-        </script>
-      <script type = "text/javascript">
-  var answerCount = 0;
-  var teaching = prompt ("How long have you been teaching?");
-          if ("teaching" >10){
-            alert("CORRECT!");
-            answerCount++;
-            console.log ("question 1 correct answer is 20")
-          }else{
-            alert("Sorry Charlie the number is 20!");
-        }
+var userName = prompt ("Hey who you!");
+  alert ("Hey " + userName + "! How you livin !");
+</script>
+<script type = "text/javascript">
+var answerCount = 0;
 var school = prompt ("What school did you attend?");
-   if (school == "Nova" || school == "SUNY"){
-        alert("CORRECT!");
-        answerCount++;
-        console.log(" question 2 correct answer is Nova or SUNY")
-      }
- else{
+if (school.toUpperCase() == "NOVA" || school.toUpperCase() == "SUNY"){
+    alert("CORRECT!");
+    answerCount++;
+    console.log(" question 2 correct answer is Nova or SUNY")
+  }
+else{
     alert("Sorry Charlie, I attended Nova and SUNY!");
   }
     //answerCount = 1;
-  var goal = prompt ("What is your goal after Code 201?");
-  if (goal == "get an internship"){
-    alert("CORRECT!");
-    answerCount++;
-    console.log("question 3 correct answer is get an internship")
-  }
-  else{
-    alert("Sorry Charlie I want to get an internship!");
-  }
- var favoriteNumber = prompt ("What is your favorite number?");
-if ("favoriteNumber"> 20){
-  alert("TOO HIGH!");
+var goal = prompt ("What is your goal after Code 201?");
+if (goal.toUpperCase() == "GET AN INTERNSHIP"){
+  alert("CORRECT!");
   answerCount++;
-  console.log("question 4 correct answer is 24")
+  console.log("question 3 correct answer is get an internship")
 }
-  else{
-  alert("Sorry Charlie too low!");
+else{
+  alert("Sorry Charlie I want to get an internship!");
 }
-var number = prompt ("Guess my number?");
-{
-  if (number <=20)
-      alert("Sorry Charlie, try again");
-    }
-    //else{
-    (number >=25)
-        alert("Sorry Charlie, last chance!");
-      while (number ==24){
-        "My number is 24;"
-      }
-    alert("My number is 24!");
-  console.log ("My number is 24");
-  count = 24;
-//}
+var favoriteNumber = prompt ("What is your favorite number?");
+if(favoriteNumber == 24){
+  alert("Correct");
+  answerCount++;
+}else if(favoriteNumber <24){
+  alert("Too low!");
+}
+else{
+  alert("Too High!");
+}
 
 var finalCount = alert("Good job you guessed " + answerCount + " correct");
-    </script>
-      </body>
- </html>
+</script>
+</body>
+</html>
