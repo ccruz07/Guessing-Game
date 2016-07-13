@@ -1,24 +1,33 @@
 h1{
   font-family: Arial;
-  color:blue;
+  color:black;
   font-size: 48px;
 }
   h3{
-    font-size: 40px;
+    font-size: 30px;
     font-family: Arial;
-  }
+}
 p{
   font-family:Arial;
   font-size: 18px;
 }
-li{ font-family: Cursive;
+li{
+  font-family: Cursive;
     font-size: 24px;
-  }
+}
   h2 {
   font-family: Arial;
 }
 #results{
 font-family:Arial;
 font-size: 20px;
+color: green;
+}
+#results1{
+  color: red;
+}
 
+}
+body{
+  background-color:#ffeec0;
 }
