@@ -1,4 +1,3 @@
 # Guessing-Game
-Updated Guessing-Game - class 4
-added game results print out to page,
+Updated Guessing-Game - class 5
 added CSS updates
